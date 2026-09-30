@@ -1,4 +1,0 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Comic Preview</title><link rel="stylesheet" href="/static/css/style.css"></head><body>
-<main class="container"><header><h1>📖 Your Comic</h1><a class="button" href="{{ pdf_url }}">Download Your Comic as PDF</a></header>
-{% for panel in layout %}<article class="panel card"><h2>Panel {{ panel.panel }}: {{ panel.title }}</h2><img src="{{ panel.image_url }}" alt="{{ panel.title }}"><p class="scene"><i>{{ panel.scene_description }}</i></p><p><b>Caption:</b> {{ panel.caption }}</p><p><b>Narration:</b> {{ panel.narration }}</p><details><summary>Image Prompt Reference</summary><p>{{ panel.image_prompt }}</p></details></article>{% endfor %}
-<a class="button" href="/">Create Another Comic</a></main></body></html>
