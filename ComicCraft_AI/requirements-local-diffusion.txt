@@ -1,6 +1,0 @@
-# Optional: only install this if you want local Stable Diffusion image generation.
-torch>=2.2
-diffusers>=0.30
-transformers>=4.45
-accelerate>=0.34
-safetensors>=0.4
